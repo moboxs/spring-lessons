@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 静态实例化-->
+    <bean id="user-by-static-method" class="com.github.moboxs.ioc.overview.domain.User"
+        factory-method="createUser">
+    </bean>
+    <!--Bean的方法实例化-->
+    <bean id="user-by-instance-method" factory-bean="userFactory" factory-method="createUser">
+    </bean>
+    <!--FactoryBean 实例化Bean-->
+    <bean id="user-by-factory-bean" class="com.github.moboxs.bean.factory.UserFactoryBean" />
+
+    <bean id="userFactory" class="com.github.moboxs.bean.factory.DefaultUserFactory" />
+
+</beans>

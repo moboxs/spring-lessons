@@ -29,4 +29,11 @@ public class User {
                 ", id=" + id +
                 '}';
     }
+
+    public static User createUser() {
+        User user = new User();
+        user.setName("张三222");
+        user.setId(100L);
+        return user;
+    }
 }
