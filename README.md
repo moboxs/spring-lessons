@@ -1,4 +1,4 @@
-# Spring核心编程
+# 【Spring核心编程】
 
 https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans
 
@@ -47,7 +47,7 @@ BeanFactory是Spring底层IoC容器，ApplicationContext是具备应用特性的
     applicationContext.close();
     
     
-## Spring Bean
+# 一、Spring Bean
 
 ## BeanDefinition元信息
 
@@ -121,3 +121,9 @@ BeanFactory是Spring底层IoC容器，ApplicationContext是具备应用特性的
 - 关闭 Spring容器 （应用上下文）
 - 手动执行GC
 - Spring Bean 覆盖的finalize()方法被回调
+
+
+# 二、Spring IoC 依赖查找
+
+## 单一类型依赖查找接口- BeanFactory
+- 
