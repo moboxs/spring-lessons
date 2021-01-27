@@ -126,4 +126,3 @@ BeanFactory是Spring底层IoC容器，ApplicationContext是具备应用特性的
 # 二、Spring IoC 依赖查找
 
 ## 单一类型依赖查找接口- BeanFactory
-- 
